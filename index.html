@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💖 Linh Cute 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&family=Caveat:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Video Background -->
+    <div class="video-wrapper">
+        <video id="bgVideo" autoplay loop muted playsinline>
+            <source src="phamlinh.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Background Audio -->
+    <audio id="bgAudio" autoplay loop preload="auto">
+        <source src="amthanh.mp4" type="audio/mp4">
+        <source src="amthanh.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Mobile Audio Control -->
+    <button id="audioControl" class="audio-control">
+        <span class="audio-icon">🔊</span>
+        <span class="audio-text">Chạm để bật nhạc</span>
+    </button>
+
+    <!-- Multiple heart effect layers -->
+    <div class="hearts-container" id="heartsContainer"></div>
+    <div class="heart-rain-container" id="heartRainContainer"></div>
+    <div class="heart-explosion-container" id="heartExplosionContainer"></div>
+    <div class="shimmer-container" id="shimmerContainer"></div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Orbiting hearts around video -->
+        <div class="orbit-container" id="orbitContainer">
+            <div class="orbit-heart orbit-1">💗</div>
+            <div class="orbit-heart orbit-2">💖</div>
+            <div class="orbit-heart orbit-3">💕</div>
+            <div class="orbit-heart orbit-4">💓</div>
+            <div class="orbit-heart orbit-5">💝</div>
+            <div class="orbit-heart orbit-6">💘</div>
+            <div class="orbit-heart orbit-7">💞</div>
+            <div class="orbit-heart orbit-8">❤️</div>
+        </div>
+
+        <div class="video-frame-container">
+            <!-- Heart pulse halo behind video -->
+            <div class="heart-halo halo-1"></div>
+            <div class="heart-halo halo-2"></div>
+            <div class="heart-halo halo-3"></div>
+
+            <div class="frame-border">
+                <video class="center-video" autoplay loop muted playsinline>
+                    <source src="phamlinh.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="text-container">
+            <!-- Floating mini hearts around text -->
+            <div class="mini-hearts-wrapper">
+                <span class="mini-heart mini-1">💕</span>
+                <span class="mini-heart mini-2">💖</span>
+                <span class="mini-heart mini-3">💗</span>
+                <span class="mini-heart mini-4">💓</span>
+                <span class="mini-heart mini-5">💝</span>
+                <span class="mini-heart mini-6">💘</span>
+                <span class="mini-heart mini-7">💞</span>
+                <span class="mini-heart mini-8">❤️</span>
+            </div>
+
+            <div class="text-glow-wrapper">
+                <h1 class="main-text">
+                    <span class="word word-1">linh</span>
+                    <span class="word word-2">cute</span>
+                    <span class="word word-3">đáng yêu</span>
+                </h1>
+                <div class="sparkles">✨ 💖 ❤️ 💕 ✨</div>
+            </div>
+        </div>
+
+        <!-- Enhanced decorative hearts around text -->
+        <div class="decorative-heart heart-top-left">❤️</div>
+        <div class="decorative-heart heart-top-right">💖</div>
+        <div class="decorative-heart heart-bottom-left">💕</div>
+        <div class="decorative-heart heart-bottom-right">💗</div>
+        <div class="decorative-heart heart-center-1">💝</div>
+        <div class="decorative-heart heart-center-2">💘</div>
+        <div class="decorative-heart heart-extra-1">💞</div>
+        <div class="decorative-heart heart-extra-2">💓</div>
+        <div class="decorative-heart heart-extra-3">💟</div>
+        <div class="decorative-heart heart-extra-4">💗</div>
+    </div>
+
+    <!-- Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Floating bubbles -->
+    <div class="bubbles-container" id="bubblesContainer"></div>
+
+    <!-- Heart confetti -->
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
